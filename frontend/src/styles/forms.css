@@ -1,0 +1,101 @@
+.auth-page {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 76px);
+  padding: 60px 20px;
+  background: var(--sage);
+}
+.auth-card {
+  width: min(100%, 460px);
+  padding: 50px;
+  background: var(--cream);
+}
+.auth-card h1 {
+  font-size: 50px;
+}
+.auth-card > p:not(.eyebrow) {
+  margin: 14px 0 30px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.auth-card form,
+.listing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.auth-card label,
+.listing-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+.auth-card input,
+.listing-form input,
+.listing-form select,
+.listing-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  outline: none;
+  background: #fff;
+  color: var(--ink);
+  font-size: 13px;
+}
+.auth-card input:focus,
+.listing-form input:focus,
+.listing-form textarea:focus {
+  border-color: var(--orange);
+}
+.auth-switch {
+  margin-top: 25px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+.auth-switch a {
+  color: var(--orange);
+  font-weight: 700;
+}
+.form-page .page-heading {
+  margin-bottom: 60px;
+}
+.listing-form {
+  max-width: 780px;
+  margin: auto;
+}
+.form-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.listing-form textarea {
+  resize: vertical;
+}
+.success-card {
+  max-width: 620px;
+  padding: 50px;
+  margin: auto;
+  background: var(--sage);
+  color: var(--green);
+}
+.success-card svg {
+  color: var(--orange);
+}
+.success-card h2 {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 500;
+}
+.success-card p,
+.lead {
+  max-width: 560px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.success-card .button {
+  margin-top: 24px;
+}

@@ -1,0 +1,202 @@
+
+.page-heading h1 {
+  font-size: clamp(45px, 5vw, 68px);
+}
+.page-description {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 35px;
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--green);
+  color: var(--green);
+}
+.search-bar input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+}
+.search-bar button {
+  border: 0;
+  background: none;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 700;
+}
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.filter-scroll {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+}
+.filter-scroll button {
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+}
+.filter-scroll button.selected {
+  color: #fff;
+  border-color: var(--green);
+  background: var(--green);
+}
+.filter-row select {
+  padding: 9px;
+  border: 1px solid var(--line);
+  color: var(--green);
+  background: transparent;
+  font-size: 11px;
+}
+.loading {
+  color: var(--orange);
+  font-size: 13px;
+}
+.empty-state {
+  padding: 80px 10px;
+  text-align: center;
+  color: var(--muted);
+}
+.empty-state svg {
+  color: var(--orange);
+}
+.empty-state h3 {
+  color: var(--green);
+  font-family: "Playfair Display";
+  font-size: 25px;
+}
+.empty-state .button {
+  margin-top: 15px;
+}
+.detail-page {
+  max-width: 1050px;
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 40px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.detail-layout {
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  gap: 90px;
+  align-items: center;
+}
+.detail-cover {
+  display: grid;
+  place-items: center;
+  min-height: 530px;
+  padding: 50px;
+  overflow: hidden;
+  background: #e9eee4;
+}
+.detail-cover img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.detail-copy h1 {
+  margin: 0;
+  color: var(--green);
+  font-family: "Playfair Display";
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+.detail-author {
+  color: var(--muted);
+}
+.detail-price {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 27px 0;
+}
+.detail-price strong {
+  color: var(--green);
+  font-size: 27px;
+}
+.detail-price del {
+  color: #9ba39c;
+}
+.detail-price span {
+  padding: 6px 9px;
+  color: var(--green);
+  background: var(--sage);
+  font-size: 10px;
+}
+.detail-description {
+  max-width: 470px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.seller-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0;
+  padding: 17px;
+  border: 1px solid var(--line);
+}
+.avatar.large {
+  width: 42px;
+  height: 42px;
+}
+.seller-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.seller-card small {
+  color: var(--orange);
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.seller-card strong {
+  color: var(--green);
+  font-family: "Playfair Display";
+}
+.seller-card div span {
+  color: var(--muted);
+  font-size: 10px;
+}
+.seller-card a {
+  margin-left: auto;
+  color: var(--orange);
+  font-size: 11px;
+}
+.detail-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 32px;
+}
+.detail-actions .button {
+  min-height: 46px;
+}
+.sold-notice {
+  margin: 18px 0;
+  padding: 10px 12px;
+  color: #8f4438;
+  background: #f7e5df;
+  font-size: 12px;
+}

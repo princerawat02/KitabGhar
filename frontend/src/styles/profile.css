@@ -1,0 +1,85 @@
+.simple-page {
+  min-height: 550px;
+}
+.simple-page h1 {
+  margin-bottom: 25px;
+  font-size: clamp(50px, 6vw, 75px);
+}
+.simple-page > .lead {
+  margin-bottom: 45px;
+  font-size: 18px;
+}
+.about-manifesto {
+  margin: 0;
+  max-width: 620px;
+  padding: 30px;
+  background: var(--sage);
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 450px;
+  padding: 35px;
+  background: var(--sage);
+}
+.profile-card h2 {
+  margin: 5px 0 0;
+  color: var(--green);
+  font-family: "Playfair Display";
+  font-weight: 500;
+}
+.listings-section {
+  margin-top: 70px;
+}
+.listings-section h2 {
+  margin: 0;
+  color: var(--green);
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+.my-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.my-listing {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.my-listing img {
+  width: 70px;
+  height: 82px;
+  object-fit: contain;
+  background: #eef1e8;
+}
+.my-listing h3 {
+  margin: 5px 0;
+  color: var(--green);
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.listing-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.listing-actions .button {
+  padding: 9px 13px;
+  font-size: 11px;
+}
+.danger-button {
+  color: #b24f3f;
+}
+.form-error {
+  color: #b24f3f;
+  font-size: 12px;
+}

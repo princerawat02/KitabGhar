@@ -1,0 +1,204 @@
+@media (max-width: 850px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 82px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 22px;
+    background: var(--cream);
+    box-shadow: 0 10px 20px #234b3c12;
+  }
+  .main-nav.is-open {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .header-tools {
+    gap: 12px;
+  }
+  .icon-link span,
+  .user-menu > a span:not(.avatar),
+  .text-button {
+    display: none;
+  }
+  .hero {
+    min-height: 650px;
+    padding: 70px 28px;
+    align-items: flex-start;
+  }
+  .hero-art {
+    right: -55px;
+    bottom: 0;
+    width: 440px;
+    height: 53%;
+    opacity: 0.9;
+  }
+  .hero-copy {
+    max-width: 550px;
+  }
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-panel {
+    gap: 40px;
+  }
+  .category-list {
+    width: 55%;
+  }
+  .detail-layout {
+    gap: 45px;
+  }
+  .detail-copy h1 {
+    font-size: 45px;
+  }
+  .footer-links {
+    gap: 35px;
+  }
+}
+@media (max-width: 580px) {
+  .site-header {
+    padding: 0 18px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .hero h1 {
+    font-size: 49px;
+  }
+  .hero-text {
+    font-size: 14px;
+  }
+  .hero-proof {
+    margin-top: 45px;
+  }
+  .hero-art {
+    right: -100px;
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }
+  .home-section,
+  .page,
+  .form-page,
+  .detail-page,
+  .simple-page {
+    padding: 65px 20px;
+  }
+  .section-intro,
+  .page-heading {
+    display: block;
+  }
+  .section-intro .under-link {
+    margin-top: 20px;
+    width: max-content;
+  }
+  .section-intro h2 {
+    font-size: 36px;
+  }
+  .books-grid {
+    gap: 10px;
+  }
+  .book-cover {
+    height: 185px;
+    padding: 15px;
+  }
+  .book-card-body {
+    padding: 12px;
+  }
+  .book-card h3 {
+    font-size: 16px;
+  }
+  .card-bottom strong {
+    font-size: 15px;
+  }
+  .card-bottom del {
+    display: none;
+  }
+  .category-panel {
+    display: block;
+    padding: 65px 25px;
+  }
+  .category-list {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .manifesto {
+    display: block;
+    margin: 65px auto;
+    padding: 0 25px;
+  }
+  .manifesto h2 {
+    font-size: 36px;
+    margin-top: 18px;
+  }
+  .manifesto > p {
+    margin-top: 25px;
+  }
+  .footer-main {
+    display: block;
+    padding-bottom: 40px;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .footer-bottom {
+    display: block;
+    line-height: 2;
+  }
+  .footer-bottom span {
+    display: block;
+  }
+  .page-heading h1 {
+    font-size: 50px;
+  }
+  .page-description {
+    margin-top: 20px;
+  }
+  .filter-row {
+    display: block;
+  }
+  .filter-row select {
+    margin-top: 15px;
+  }
+  .detail-layout {
+    display: block;
+  }
+  .detail-cover {
+    min-height: 350px;
+    margin-bottom: 40px;
+  }
+  .detail-copy h1 {
+    font-size: 45px;
+  }
+  .detail-actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .auth-card {
+    padding: 30px 22px;
+  }
+  .auth-card h1 {
+    font-size: 43px;
+  }
+  .form-columns {
+    grid-template-columns: 1fr;
+  }
+  .success-card {
+    padding: 30px;
+  }
+  .simple-page h1 {
+    font-size: 50px;
+  }
+}
+.field-note {
+  margin-left: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 400;
+}
