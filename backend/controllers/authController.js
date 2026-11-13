@@ -17,8 +17,9 @@ const safeUser = (user) => ({
 
 const cookieOptions = {
   httpOnly: true,
-  sameSite: "lax",
+  sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
   secure: process.env.NODE_ENV === "production",
+  path: "/",
   maxAge: 7 * 24 * 60 * 60 * 1000,
 };
 
@@ -68,8 +69,9 @@ exports.login = async (req, res, next) => {
 exports.logout = (_req, res) => {
   res.clearCookie("kitabghar_token", {
     httpOnly: true,
-    sameSite: "lax",
+    sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
     secure: process.env.NODE_ENV === "production",
+    path: "/",
   });
   res.status(204).end();
 };
